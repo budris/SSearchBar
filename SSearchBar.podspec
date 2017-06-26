@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
   s.name         = "SSearchBar"
   s.version      = "1.0.1"
-  s.summary      = "A short description of SSearchBar."
+  s.summary      = "SSearchBar"
 
   s.description  = <<-DESC
   "Simple search bar with timer after typing text for search"
