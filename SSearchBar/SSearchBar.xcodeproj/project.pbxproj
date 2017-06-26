@@ -10,6 +10,7 @@
 		DBA0C4FE1F0126C1000BFB9F /* SSearchBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA0C4F41F0126C1000BFB9F /* SSearchBar.framework */; };
 		DBA0C5031F0126C1000BFB9F /* SSearchBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA0C5021F0126C1000BFB9F /* SSearchBarTests.swift */; };
 		DBA0C5051F0126C1000BFB9F /* SSearchBar.h in Headers */ = {isa = PBXBuildFile; fileRef = DBA0C4F71F0126C1000BFB9F /* SSearchBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBA0C50F1F012783000BFB9F /* SSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA0C50E1F012783000BFB9F /* SSearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		DBA0C4FD1F0126C1000BFB9F /* SSearchBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSearchBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA0C5021F0126C1000BFB9F /* SSearchBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSearchBarTests.swift; sourceTree = "<group>"; };
 		DBA0C5041F0126C1000BFB9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBA0C50E1F012783000BFB9F /* SSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				DBA0C4F71F0126C1000BFB9F /* SSearchBar.h */,
+				DBA0C50E1F012783000BFB9F /* SSearchBar.swift */,
 				DBA0C4F81F0126C1000BFB9F /* Info.plist */,
 			);
 			path = SSearchBar;
@@ -149,6 +152,7 @@
 					DBA0C4F31F0126C1000BFB9F = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = MKJ3EVS82G;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					DBA0C4FC1F0126C1000BFB9F = {
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA0C50F1F012783000BFB9F /* SSearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +329,7 @@
 		DBA0C5091F0126C1000BFB9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MKJ3EVS82G;
@@ -332,10 +338,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SSearchBar/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = andreysak.SSearchBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -343,6 +351,7 @@
 		DBA0C50A1F0126C1000BFB9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MKJ3EVS82G;
@@ -351,6 +360,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SSearchBar/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = andreysak.SSearchBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -362,6 +372,7 @@
 		DBA0C50C1F0126C1000BFB9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = MKJ3EVS82G;
 				INFOPLIST_FILE = SSearchBarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +385,7 @@
 		DBA0C50D1F0126C1000BFB9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = MKJ3EVS82G;
 				INFOPLIST_FILE = SSearchBarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
