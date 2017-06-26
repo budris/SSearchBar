@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   #
 
   s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -76,7 +76,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/budris/SSearchBar.git", :tag => "#{s.version}" }
 
-
+  s.source_files = 'SSearchBar/SSearchBar/**/*'
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
