@@ -15,11 +15,11 @@ protocol SSearchBarDelegate: UISearchBarDelegate {
 class SSearchBar: UISearchBar {
     private static let defaultDelay: TimeInterval = 0.5
     
-    fileprivate var timer: Timer?
-    
     weak public var sSearchBarDelegate: SSearchBarDelegate?
     
     public var delayForStartingSearch: TimeInterval = SSearchBar.defaultDelay
+    
+    fileprivate var timer: Timer?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
